@@ -7,7 +7,7 @@ Learn to fuse lidar point clouds, radar signatures, and camera images using Kalm
 
 ## Projects
 
-[<h2>Lidar Obstacle Detection</h2>](https://github.com/thienan092/Sensor-Fusion-ND/tree/master/Lidar)
+[<h2>Lidar Obstacle Detection</h2>](https://github.com/thienan092/Sensor-Fusion-ND/tree/main/Lidar%20Obstacle%20Detection)
 
 <h4>Description: </h4>
 <p>
