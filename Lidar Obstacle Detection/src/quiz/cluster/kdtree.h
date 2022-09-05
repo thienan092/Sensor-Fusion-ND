@@ -27,7 +27,7 @@ struct KdTree
   
     void insertHelper(Node*& node, uint level, std::vector<float> point, int id)
     {
-        uint cd = level % 2;
+        uint cd = level % 3;
         
         if(node == NULL)
         {
@@ -53,13 +53,14 @@ struct KdTree
   
     void searchHelper(std::vector<float> target, Node* node, uint level, float distanceTol, std::vector<int> &ids) const 
     {
-        uint cd = level % 2;
+        uint cd = level % 3;
         
         if(node != NULL)
         {
             float dx = node->point[0] - target[0];
             float dy = node->point[1] - target[1];
-            float d = sqrt(dx*dx + dy*dy);
+            float dz = node->point[2] - target[2];
+            float d = sqrt(dx*dx + dy*dy + dz*dz);
 
             if (d <= distanceTol)
             {
