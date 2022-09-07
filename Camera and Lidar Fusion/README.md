@@ -18,12 +18,14 @@ In this final project, you will implement the missing parts in the schematic. To
   * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
   * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
 * OpenCV >= 4.1
-  * This must be [compiled](https://docs.opencv.org/3.4/d3/d52/tutorial_windows_install.html) from source using the `-D OPENCV_ENABLE_NONFREE=ON` cmake flag for testing the SIFT and SURF detectors.
   * The OpenCV 4.1.0 source code can be found [here](https://github.com/opencv/opencv/tree/4.1.0)
+  * Linux/Windows: This must be [compiled](https://docs.opencv.org/3.4/d3/d52/tutorial_windows_install.html) from source using the `-D OPENCV_ENABLE_NONFREE=ON` cmake flag for testing the SIFT and SURF detectors.
+  * Visual Studio: [Build](https://gitlab.com/opencv6/opencv_wiki/-/wikis/Build-OpenCV-libraries-using-vcpkg) OpenCV libraries using vcpkg. 
 * gcc/g++ >= 5.4
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+  * Visual Studio: MSVC in Visual Studio IDE. 
 
 ## Basic Build Instructions
 
