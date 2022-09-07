@@ -1,4 +1,14 @@
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+cmake_minimum_required( VERSION 3.0 )
+if( 0 )
+  set( CMAKE_TOOLCHAIN_FILE "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake" )
+  set( OpenCV_DIR )
+  if( NOT CMAKE_CL_64 )
+    set( OpenCV_DIR "C:/dev/vcpkg/installed/x86-windows/share/opencv" )
+  else()
+    set( OpenCV_DIR "C:/dev/vcpkg/installed/x64-windows/share/opencv" )
+  endif()
+
+endif()
 
 add_definitions(-std=c++11)
 

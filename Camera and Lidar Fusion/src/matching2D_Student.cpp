@@ -86,7 +86,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     else if (descriptorType.compare("SIFT") == 0)
     {
         //...
-        extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
+        extractor = cv::SiftDescriptorExtractor::create();
     }
 
     // perform feature description
@@ -260,7 +260,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
     else if (detectorType.compare("SIFT") == 0)
     {
         //...
-        cv::Ptr<cv::FeatureDetector> detector = cv::xfeatures2d::SIFT::create();
+        cv::Ptr<cv::FeatureDetector> detector = cv::SIFT::create();
       
         double t = (double)cv::getTickCount();
         detector->detect(img, keypoints);
