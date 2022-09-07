@@ -29,8 +29,8 @@ void clusterLidarWithROI(std::vector<BoundingBox> &boundingBoxes, std::vector<Li
         // project Lidar point into camera
         Y = P_rect_xx * R_rect_xx * RT * X;
         cv::Point pt;
-        pt.x = Y.at<double>(0, 0) / Y.at<double>(0, 2); // pixel coordinates
-        pt.y = Y.at<double>(1, 0) / Y.at<double>(0, 2);
+        pt.x = Y.at<double>(0, 0) / Y.at<double>(2, 0); // pixel coordinates
+        pt.y = Y.at<double>(1, 0) / Y.at<double>(2, 0);
 
         vector<vector<BoundingBox>::iterator> enclosingBoxes; // pointers to all bounding boxes which enclose the current Lidar point
         for (vector<BoundingBox>::iterator it2 = boundingBoxes.begin(); it2 != boundingBoxes.end(); ++it2)
@@ -60,12 +60,16 @@ void clusterLidarWithROI(std::vector<BoundingBox> &boundingBoxes, std::vector<Li
 	    // STUDENTS NEED TO ADD THIS CODE - END
 
     } // eof loop over all Lidar points
-    for (vector<BoundingBox>::iterator it = boundingBoxes.begin(); it != boundingBoxes.end(); ++it)
+    vector<BoundingBox>::iterator it = boundingBoxes.begin();
+    while (it != boundingBoxes.end())
     {
         if ((*it).lidarPoints.size() == 0)
         {
-            it--;
-            boundingBoxes.erase(it+1);
+            it = boundingBoxes.erase(it);
+        }
+        else
+        {
+            ++it;
         }
     }
 }
