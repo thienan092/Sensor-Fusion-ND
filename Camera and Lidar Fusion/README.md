@@ -17,6 +17,7 @@ In this final project, you will implement the missing parts in the schematic. To
   * Linux: make is installed by default on most Linux distros
   * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
   * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
+  * Visual Studio: Not required. 
 * OpenCV >= 4.1
   * The OpenCV 4.1.0 source code can be found [here](https://github.com/opencv/opencv/tree/4.1.0)
   * Linux/Windows: This must be [compiled](https://docs.opencv.org/3.4/d3/d52/tutorial_windows_install.html) from source using the `-D OPENCV_ENABLE_NONFREE=ON` cmake flag for testing the SIFT and SURF detectors.
@@ -31,8 +32,9 @@ In this final project, you will implement the missing parts in the schematic. To
 
 1. Clone this repo.
 2. Make a build directory in the top level project directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./3D_object_tracking`.
+3. Generate project: `cmake ..`
+4. Compile: `make` or use VS IDE. 
+5. Run it: `./3D_object_tracking`.
 
 ## Implemetation Details
 
