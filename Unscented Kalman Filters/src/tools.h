@@ -1,6 +1,7 @@
 #ifndef TOOLS_H_
 #define TOOLS_H_
 #include <vector>
+#include <random>
 #include "Eigen/Dense"
 #include "render/render.h"
 #include <pcl/io/pcd_io.h>
