@@ -23,5 +23,5 @@ Detect other cars on the road using raw lidar data from Udacity’s real self-dr
 <p>
 Detect and track objects from the benchmark KITTI dataset. Classify those objects and project them into three dimensions. Fuse those projections together with lidar data to create 3D objects to track over time. 
 
-* Data set: Pull the model weights [here](https://github.com/udacity/SFND_3D_Object_Tracking/tree/master/dat), the data [here](https://github.com/udacity/SFND_3D_Object_Tracking/tree/master/images) then drop them into 'dat' and 'images' directory. 
+* Data set: Pull the model weights [here](https://github.com/udacity/SFND_3D_Object_Tracking/tree/master/dat) and the data [here](https://github.com/udacity/SFND_3D_Object_Tracking/tree/master/images) then drop them into 'dat' and 'images' directories. 
 </p>
