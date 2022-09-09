@@ -36,7 +36,7 @@ In this final project, you will implement the missing parts in the schematic. To
 4. Compile: `make` or use VS IDE. 
 5. Run it: `./3D_object_tracking`.
 
-## Implemetation Details
+## Implementation Details
 
 [FP.1 Match 3D Objects] 
  - Step 1: Crop Lidar points stay inside the scene and have strong reflect signal. 
